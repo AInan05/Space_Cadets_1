@@ -31,7 +31,7 @@ public class IdFinder {
                     found = true;
                     int length = line.length();
                     // THe name is within these boundaries
-                    String name = line.substring(35, (length - 5));
+                    String name = line.substring(35, (length - 4));
                     System.out.println("Name found: " + name);
                     break;
                 }
