@@ -19,7 +19,6 @@ public class IdFinder {
             URL id_url = new URL("https://www.ecs.soton.ac.uk/people/" + id);
             // open url connection
             HttpURLConnection url_connection = (HttpURLConnection) id_url.openConnection();
-            url_connection.setRequestMethod("GET");
             // Buffer Reader object for reading html
             BufferedReader webReader = new BufferedReader(new InputStreamReader(url_connection.getInputStream()));
             boolean found = false;
